@@ -1,39 +1,52 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Hotel Website README
 
-Welcome,
+This repository contains the code for a hotel website. The website is designed to showcase the hotel's features, provide information about the rooms and services, and allow users to book a room.
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Getting Started
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+To get started with this project, follow these steps:
 
-## Codeanywhere Reminders
+1. Clone the repository: `git clone https://github.com/your-username/hotel-website.git`
+2. Navigate to the project directory: `cd hotel-website`
+3. Open the `index.html` file in a web browser to view the website.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## HTML Structure
 
-`python3 -m http.server`
+The HTML file (`index.html`) contains the structure and content of the website. It consists of the following sections:
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- **Header**: Contains the navigation menu and the hotel logo.
+- **Main Content**: Divided into several sections, including a featured image, a section about the hotel's style, a section about the unique rooms, and sections for services and contact information.
+- **Footer**: Contains navigation links and social media icons.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## CSS Styling
 
-`http_server`
+The website's styles are defined in the `style.css` file. It contains various CSS rules that customize the appearance and layout of the website. The CSS file is linked to the HTML file using the `<link>` tag in the `<head>` section.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## JavaScript Functionality
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+The `script.js` file includes JavaScript functions that handle room booking. It provides a `bookRoom` function that prompts the user for their details and performs a simplified booking logic. The `getRoomDetails` function is a placeholder that can be replaced with actual logic to fetch room details from a database or API.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Contributing
 
-To log into the Heroku toolbelt CLI:
+If you'd like to contribute to this project, you can follow these steps:
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+1. Fork the repository on GitHub.
+2. Create a new branch for your feature or bug fix: `git checkout -b feature/your-feature-name`.
+3. Make your changes and commit them: `git commit -m "Add your commit message"`.
+4. Push your changes to your forked repository: `git push origin feature/your-feature-name`.
+5. Open a pull request on the original repository.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## License
 
----
+This project is licensed under the MIT License. You can find the license file [](LICENSE).
 
-Happy coding!
+## Acknowledgements
+
+- The website design and code were created by Kimberley France.
+- Special thanks to CodeInstitute for their assistance and support during the development of this project.
+
+## Contact
+
+If you have any questions or feedback, please contact Kimberley France at kimberley1122france@gmail.com.
+
+Thank you for using and contributing to this hotel website project!
