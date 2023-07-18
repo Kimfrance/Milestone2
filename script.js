@@ -1,36 +1,45 @@
 function bookRoom(roomNumber) {
-            // Retrieve room details based on roomNumber
-            var roomDetails = getRoomDetails(roomNumber);
+	var roomDetails = getRoomDetails(roomNumber);
+	var guestName = prompt("Enter your name:");
+	var checkInDate = prompt("Enter check-in date:");
+	var checkOutDate = prompt("Enter check-out date:");
+	var bookingDetails = {
+		roomNumber: roomNumber,
+		roomDetails: roomDetails,
+		guestName: guestName,
+		checkInDate: checkInDate,
+		checkOutDate: checkOutDate
+	};
+	
+	console.log(bookingDetails);
+	
+	alert("Room booked successfully!");
 
-            // Prompt user for their details
-            var guestName = prompt("Enter your name:");
-            var checkInDate = prompt("Enter check-in date:");
-            var checkOutDate = prompt("Enter check-out date:");
-
-            // Perform booking logic (this is a simplified example)
-            var bookingDetails = {
-                roomNumber: roomNumber,
-                roomDetails: roomDetails,
-                guestName: guestName,
-                checkInDate: checkInDate,
-                checkOutDate: checkOutDate
-            };
-
-            // You can perform further processing with the bookingDetails object
-            console.log(bookingDetails);
-
-            // Show a confirmation message to the user
-            alert("Room booked successfully!");
-        }
-
-        function getRoomDetails(roomNumber) {
-            // Placeholder function to retrieve room details based on roomNumber
-            // Replace with your own logic to fetch room details from a database or API
+	function getRoomDetails(roomNumber) {
             if (roomNumber === 1) {
                 return "Room 1 details";
             } else if (roomNumber === 2) {
                 return "Room 2 details";
+            } else if (roomNumber === 3) {
+                return "Room 3 details";
+            } else if (roomNumber === 4) {
+                return "Room 4 details";
+            } else if (roomNumber === 5) {
+                return "Room 5 details";
+            } else if (roomNumber === 6) {
+                return "Room 6 details";
             } else {
                 return "Room details not found";
             }
         }
+	window.onscroll = function() {
+		var navbar = document.getElementById("navbar");
+		var page = document.getElementById("page")
+		var scrolled = window.pageYOffset;
+		
+		if (window.pageYOffset > 0) {
+			navbar.classList.add("stickynav");
+		} else {
+			navbar.classList.remove("stickynav");
+		}
+	};

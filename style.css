@@ -1,0 +1,330 @@
+* {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+.sticky {
+	padding-bottom: 4%;
+	padding-left: 4%;
+	padding-top: 2%;
+}
+
+.stickynav {
+	position: fixed;
+	width: 100%;
+	background-color: black;
+	color: white;
+}
+
+#navbar{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: white;
+}
+
+#navbar:active {
+	background-color: black;
+}
+
+#navbar.scrolled li a {
+	color: white;
+}
+
+
+#page {
+	margin-top: 20%;
+}
+
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-size: 1.5vw;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.float {
+	float: right;
+}
+
+li a {
+	display: block;
+	color: black;
+	padding: 5vw;
+	text-decoration: none;
+	opacity: 60%;
+}
+
+li a:hover {
+	opacity: 100%;
+	text-transform: uppercase;
+}
+
+.container2 {
+	width: 100%;
+	opacity: 40%;
+}
+
+.center3 {
+	position: absolute;
+	top: 160vw;
+	left: 50vw;
+	transform: translate(-50%, -50%);
+	font-size: 4vw;
+	opacity: 90%;
+}
+
+.center4 {
+	position: absolute;
+	top: 165vw;
+	left: 50vw;
+	transform: translate(-50%, -50%);
+	font-size: 4vw;
+	opacity: 90%;
+}
+
+footer {
+	display: block;
+	opacity: 100%;
+	padding: 2px;
+	color: black;
+	text-align: center;
+	margin-top: 20%;
+	font-size: 1vw;
+}
+
+footer li {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 2vw;
+}
+
+.about {
+	padding-top: 10vw;
+	padding-left: 10vw;
+	padding-bottom: 10vw;
+	display: inline-block;
+	height: 50vw;
+}
+
+.services {
+	display: inline-block;
+	background-color: #eee;
+	height: 600px;
+	margin-top: 40px;
+	width: 100%;
+}
+
+.contact {
+	display: inline-block;
+	background-color: #eee;
+	height: 600px;
+	margin-top: 40px;
+	width: 100%;
+}
+
+.column {       
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+.right-column img {
+	height: 150px;
+	margin: 0;
+	margin-top: 280px;
+}
+
+.column h3 {
+	margin-left: 40px;
+	margin-top: 40px;
+}
+
+.column p {
+	text-align: center;
+	margin-left: 0px;
+	margin-top: 140px;
+}
+
+.row {
+	display: flex;
+}
+
+.image {
+	margin-top: 0px;
+	margin-bottom: 40px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+	width: 100%;
+	padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+	margin: 8%;
+	color: #b59c54;
+	font-size: 6vw;
+	font-weight: 200;
+}
+
+.booking {
+    display: flex;
+	align-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+	margin-left: 15%;
+}
+
+.booking img {
+    width: 400px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.booking .details {
+    flex: 1;
+}
+
+.booking h3 {
+    margin: 0;
+	color: black;
+}
+
+.booking p {
+    margin: 5px 0;
+	color: black;
+}
+
+.booking .book-now {
+    margin-top: 10px;
+    text-align: center;
+	padding-top: 20px;
+}
+
+.book-now button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #b59c54;
+    border:solid;
+	border-width: thin;
+	border-color: #b59c54;
+    cursor: pointer;
+}
+
+.book-now button:hover {
+    background-color: #b59c54;
+	color: white;
+}
+
+.box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.discover {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.discover img {
+    width: 400px;
+    height: auto;
+    margin-right: 20px;
+	margin-left: 80px;
+	margin-top: 80px;
+}
+
+.discover .details {
+    flex: 1;
+}
+
+.discover h2 {
+    margin: 0;
+	color: black;
+	text-align: center;
+}
+
+.discover p {
+    margin: 5px 0;
+	color: black;
+	text-align: center;
+}
+
+.discover .see-more {
+    margin-top: 10px;
+    text-align: center;
+	padding-top: 40px;
+}
+
+.see-more button {
+	font-size: 16px;
+    padding: 15px 80px;
+    background-color: #fff;
+    color: #b59c54;
+    border:solid;
+	border-width: thin;
+	border-color: #b59c54;
+    cursor: pointer;
+}
+
+.see-more button:hover {
+    background-color: #b59c54;
+	color: white;
+	text-transform: uppercase;
+}
+
+h5 {
+	color: #b59c54;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}

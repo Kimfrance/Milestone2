@@ -1,33 +1,38 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>book.html</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hotel</title>
+	<link href="https://fonts.google.com/specimen/Bacasime+Antique/about?category=Serif,Display,Monospace">
 <link href="CSS/style.css" rel="stylesheet" type="text/css">
 </head>
 <style>
 </style>
 <body>
-    <nav>
+	<div class="pattern">
+    <nav id="navbar">
         <div>
 			<ul>
-                <img class="sticky" src="images/the royal hotel.png" alt="logo" style="width:12%">
-                <li class="float"><a href="contact.html">d i s c o v e r</a></li>
-                <li class="float"><a href="#work">g a l l e r y</a></li>
+                <a href="index.html"><img class="sticky" src="images/the royal hotel.png" alt="logo" style="width:12%"></a>
+                <li class="float"><a>d i s c o v e r</a></li>
+                <li class="float"><a>g a l l e r y</a></li>
                 <li class="float"><a href="index.book.html">b o o k</a></li>
+                <li class="float"><a href="index.html">h o m e</a></li>
             </ul>
         </div>
     </nav>
-	
+	<div id="page">
     <div class="container">
         <h1>Hotel Booking</h1>
 
         <div class="booking">
-            <img src="images/right room.jpg" alt="Room 2">
+            <img src="images/luxury-bedroom-suite-resort-high-rise-hotel-with-twin-bed.jpg" alt="Room 1">
             <div class="details">
-                <h3>Room 2</h3>
-                <p>Description of Room 2.</p>
-                <p>Price: $150 per night</p>
+                <h3>The <em>Classic</em> Twin</h3>
+                <p>All of our Classic Twin bedrooms are en-suite with a <br>shower. Each room is beautifully furnished with two comfy <br>single beds with great linen. Home comforts like flat-screen <br>TV with Freeview, free Wi-Fi and tea and coffee facilities.</p>
+                <p>From £85 per night</p>
                 <div class="book-now">
                     <button onclick="bookRoom(1)">Book Now</button>
                 </div>
@@ -35,55 +40,56 @@
         </div>
 
         <div class="booking">
-            <img src="images/hotel-rooms.jpg" alt="Room 2">
+            <img src="images/left room.jpg" alt="Room 2">
             <div class="details">
-                <h3>Room 2</h3>
-                <p>Description of Room 2.</p>
-                <p>Price: $150 per night</p>
+                <h3>The <em>Classic</em> Double</h3>
+                <p>All of our Classic Double bedrooms are en-suite with a <br>shower. Each room is beautifully furnished with comfy beds <br>with great linen. Home comforts like flat-screen TV with <br>Freeview, free Wi-Fi and tea and coffee facilities.
+Our <br>Classic Double rooms have double size beds.</p>
+                <p>From £85 per night</p>
                 <div class="book-now">
                     <button onclick="bookRoom(2)">Book Now</button>
                 </div>
             </div>
         </div>
         <div class="booking">
-            <img src="images/left room.jpg" alt="Room 1">
+            <img src="images/hotel-rooms.jpg" alt="Room 3">
             <div class="details">
-                <h3>Room 1</h3>
-                <p>Description of Room 1.</p>
-                <p>Price: $100 per night</p>
+                <h3>The Double <em>Deluxe</em></h3>
+                <p>Our Deluxe Double bedrooms offer a little bit more so you <br>can really unwind and make the most of your stay. With a <br>king-size bed and en-suite with a bath tub and shower. With <br>added extras including Hope and Glory organic tea, hot <br>Chocolate, Harrogate bottled water and Noble Isle <br>toiletries.</p>
+                <p>From £100 per night</p>
                 <div class="book-now">
                     <button onclick="bookRoom(3)">Book Now</button>
                 </div>
             </div>
         </div>
         <div class="booking">
-            <img src="images/bed-nightstand-modern-bedroom-equipment-comfortable-restful-experience.jpg" alt="Room 2">
+            <img src="images/right room.jpg" alt="Room 4">
             <div class="details">
-                <h3>Room 2</h3>
-                <p>Description of Room 2.</p>
-                <p>Price: $150 per night</p>
+                <h3>Junior suite</h3>
+                <p>Our Junior Suites are the perfect choice for special <br>occasions, they have a relaxing lounge area with a sofa. They <br>have a king-size bed and en-suite with a bath tub and <br>shower. With added extras including Hope and Glory <br>organic tea, hot chocolate, Harrogate bottled water, <br>Franklin and Son's soft drinks.</p>
+                <p>From £150 per night</p>
                 <div class="book-now">
                     <button onclick="bookRoom(4)">Book Now</button>
                 </div>
             </div>
         </div>
         <div class="booking">
-            <img src="images/luxury-bedroom-suite-resort-high-rise-hotel-with-twin-bed.jpg" alt="Room 2">
+            <img src="images/bed-nightstand-modern-bedroom-equipment-comfortable-restful-experience.jpg" alt="Room 5">
             <div class="details">
-                <h3>Room 2</h3>
-                <p>Description of Room 2.</p>
-                <p>Price: $150 per night</p>
+                <h3>Deluxe suite</h3>
+                <p>Our Deluxe suites offer a little bit more so you can really <br>unwind and make the most of your stay. With a king-size <br>bed, a relaxing sofa and en-suite with a bath tub and shower. <br>With added extras including Hope and Glory organic tea, <br>hot chocolate, Harrogate bottled water and Noble Isle <br>toiletries.</p>
+                <p>From £180 per night</p>
                 <div class="book-now">
                     <button onclick="bookRoom(5)">Book Now</button>
                 </div>
             </div>
         </div>
         <div class="booking">
-            <img src="images/room-with-view-sea-mountains.jpg" alt="Room 2">
+            <img src="images/room-with-view-sea-mountains.jpg" alt="Room 6">
             <div class="details">
-                <h3>Room 2</h3>
-                <p>Description of Room 2.</p>
-                <p>Price: $150 per night</p>
+                <h3>Deluxe suite with lake view</h3>
+                <p>Our Deluxe suite with lake view offer a little bit more so <br>you can really unwind and make the most of your stay. With <br>a king-size bed, a relaxing tranquil view of our stunning lake <br>and en-suite with a bath tub and shower. With added extras <br>including Hope and Glory organic tea, hot chocolate, <br>Harrogate bottled water and Noble Isle toiletries.</p>
+                <p>From £200 per night</p>
                 <div class="book-now">
                     <button onclick="bookRoom(6)">Book Now</button>
                 </div>
@@ -121,6 +127,8 @@
 				<p>2023 TheRoyalHotel. All Rights Reserved</p>
 			</div>
 		</footer>
+	</div>
+	</div>
 	</div>
 <script src="JS/script.js">
 	</script> 
